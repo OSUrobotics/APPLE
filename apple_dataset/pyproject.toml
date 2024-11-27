@@ -1,0 +1,35 @@
+[project]
+name = "apple_dataset"
+version = "1.0.0"
+description = "Annotation tool for apple picking data to label key events."
+requires-python = ">=3.11"
+authors = [
+    { name = "Miranda Cravetz", email = "cravetzm@orecgonstate.edu" },
+    { name = "Brian Zhang", email = "8885230+brianjzhang@users.noreply.github.com" },
+]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "scipy",
+]
+
+#[project.urls]
+#Homepage = "https://github.com/"
+#Issues = "https://github.com/stuff/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
