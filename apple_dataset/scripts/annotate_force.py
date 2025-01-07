@@ -1,8 +1,8 @@
 import argparse
 
 import matplotlib.pyplot as plt
-from apple_pick_annotater.apple_annotater import AppleAnnotater
-from apple_pick_annotater.apple_pick import ApplePick
+from apple_dataset.apple_annotater import AppleAnnotater
+from apple_dataset.apple_pick import ApplePick
 
 DATA_FOLDER_PATH = "F:/Orchard Dataset/"
 
